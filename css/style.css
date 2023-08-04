@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul li{
+    list-style: none;
+}
+
+@media screen and (max-width:575px){
+    .pricing-box{
+        width: min(300px , 90vw);
+        margin: 0px auto 20px !important;
+    }
+}
+
+.pricing-box:hover{
+    border-color: #2fa55e !important;
+    box-shadow: 0 0 50px #ccc !important;
+}
+
+
+
+.feature-box li::before{
+    font-family: "Font Awesome 5 Pro";
+    content: "\f00c";
+    display: inline-block;
+    margin-right: 10px;
+    color: green;
+    font-size: 14px;
+    position: absolute;
+    height: 100%;
+    left: -25px;
+    top: 3px;
+}
+
+.feature-box li.off::before{
+    content: "\f00d";
+    color: red;
+}
+button{
+    transition: 0.3s;
+}
+button:hover {
+    background-color:  #2fa55e !important;
+    color: #fff !important;
+    border-color:transparent !important;
+}
